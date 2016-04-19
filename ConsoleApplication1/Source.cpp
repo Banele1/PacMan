@@ -41,7 +41,7 @@ int main()
 	while (done)
 	{
 		
-			ALLEGRO_EVENT events;
+			    ALLEGRO_EVENT events;
 			al_wait_for_event(event_queue, &events);
 
 			if (events.type == ALLEGRO_EVENT_KEY_DOWN)
