@@ -4,6 +4,8 @@ class Player
 public:
 	Player();
 	~Player();
+	int player_move();
+	void player_dead();
 
 private:
 	int xpos;
