@@ -13,11 +13,11 @@ public:
 	InputManager();
 	~InputManager();
 
-	void IskeyPressed(ALLEGRO_EVENT ev,int key);
-	void IskeyPressed(ALLEGRO_EVENT ev,vector<int> keys);
+	bool IskeyPressed(ALLEGRO_EVENT ev,int key);
+	bool IskeyPressed(ALLEGRO_EVENT ev,vector<int> keys);
 
-	void IskeyReleased(ALLEGRO_EVENT ev, int key);
-	void IskeyReleased(ALLEGRO_EVENT ev, vector<int>keys);
+	bool IskeyReleased(ALLEGRO_EVENT ev, int key);
+	bool IskeyReleased(ALLEGRO_EVENT ev, vector<int>keys);
 
 private:
 
