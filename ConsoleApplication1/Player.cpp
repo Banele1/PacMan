@@ -1,6 +1,6 @@
 #include "Player.h"
 
-
+/*
 Player::Player()
 {
 }
@@ -28,4 +28,4 @@ void Player::upadate(ALLEGRO_EVENT ev, InputManager input)
 void Player::Draw(ALLEGRO_DISPLAY *display)
 {
 
-}
+} */

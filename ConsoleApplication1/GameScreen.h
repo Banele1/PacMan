@@ -11,7 +11,7 @@ public:
 	virtual void LoadContent();
 	virtual void UnloadContent();
 	virtual void Update();
-	virtual void Draw(ALLEGRO_DISPLAY &display); // make a reference to the display
+	virtual void Draw(ALLEGRO_DISPLAY *display); // make a reference to the display
 
 };
 

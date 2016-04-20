@@ -9,12 +9,12 @@ public:
 	Player(void);
 	~Player(void);
 	
-	void Loadcontent();
+	/*void Loadcontent();
 	void unloadContent();
 	void upadate(ALLEGRO_EVENT ev, InputManager input);
 	void Draw(ALLEGRO_DISPLAY *display);
 
-	
+	*/
 
 private:
 	

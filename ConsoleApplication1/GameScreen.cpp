@@ -25,7 +25,7 @@ void GameScreen::Update()
 
 }
 
-void GameScreen::Draw(ALLEGRO_DISPLAY &display)
+void GameScreen::Draw(ALLEGRO_DISPLAY *display)
 {
 
 
