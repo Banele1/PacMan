@@ -22,7 +22,7 @@ private:
 	ScreenManager(ScreenManager const&);
 	void operator= (ScreenManager const&);
 
-	GameScreen *currScreen, *newScreen;
+	GameScreen *currScreen;
 
 public:
 	~ScreenManager();

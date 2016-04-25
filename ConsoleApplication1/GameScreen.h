@@ -4,6 +4,10 @@
 
 class GameScreen
 {
+protected:
+	InputManager input;
+
+
 public:
 	GameScreen();
 	~GameScreen();
