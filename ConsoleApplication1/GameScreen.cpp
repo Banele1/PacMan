@@ -20,7 +20,7 @@ void GameScreen::UnloadContent()
 
 }
 
-void GameScreen::Update()
+void GameScreen::Update(ALLEGRO_EVENT ev)
 {
 
 }

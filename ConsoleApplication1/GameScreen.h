@@ -10,7 +10,7 @@ public:
 
 	virtual void LoadContent();
 	virtual void UnloadContent();
-	virtual void Update();
+	virtual void Update(ALLEGRO_EVENT ev);
 	virtual void Draw(ALLEGRO_DISPLAY *display); // make a reference to the display
 
 };

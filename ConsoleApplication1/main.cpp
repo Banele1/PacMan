@@ -1,5 +1,7 @@
 #include<iostream>
 #include"ScreenManager.h"
+#include"InputManager.h"
+
 
 
 int main()
@@ -28,7 +30,8 @@ int main()
 	al_install_mouse();
 	al_init_image_addon();
 	al_init_acodec_addon();
-
+	al_init_font_addon();
+	al_init_ttf_addon();
 	ALLEGRO_TIMER *timer = al_create_timer(1.0f / FPS);
 	ALLEGRO_EVENT_QUEUE *event_queue = al_create_event_queue();
 	ALLEGRO_KEYBOARD_STATE keyState;
@@ -39,6 +42,10 @@ int main()
 
 	bool done = false;
 
+	InputManager input;
+	ScreenManager::GetInstance().Initialise();
+	ScreenManager::GetInstance().LoadContent();
+
 	al_start_timer(timer);
 	// game loop
 
@@ -47,8 +54,16 @@ int main()
 		ALLEGRO_EVENT ev; 
 		al_wait_for_event(event_queue,&ev);
 		al_get_keyboard_state(&keyState); 
+		 
+		if (input.IskeyPressed(ev, ALLEGRO_KEY_ESCAPE))
+			done = true; 
+
+		ScreenManager::GetInstance().Update(ev);
+		ScreenManager::GetInstance().Draw(display);
 
 
+		al_flip_display();
+		al_clear_to_color(al_map_rgb(0, 0, 0));
 	}
 
 	al_destroy_display(display);
