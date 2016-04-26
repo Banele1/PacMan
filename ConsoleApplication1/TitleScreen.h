@@ -8,7 +8,7 @@
 class TitleScreen : public GameScreen
 {
 	ALLEGRO_FONT *font;
-	InputManager input;
+	
 
 public:   
 	TitleScreen();

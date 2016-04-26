@@ -9,7 +9,7 @@ class SplashScreen :public  GameScreen
 {
 private:
 	ALLEGRO_FONT *font;
-	InputManager input;
+	
 public:
 	SplashScreen();
 	~SplashScreen(); 

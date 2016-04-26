@@ -80,6 +80,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="FadeAnimation.cpp" />
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -91,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="FadeAnimation.h" />
     <ClInclude Include="GameScreen.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Player.h" />
