@@ -65,6 +65,7 @@ int main()
 		al_flip_display();
 		al_clear_to_color(al_map_rgb(0, 0, 0));
 	}
+	ScreenManager::GetInstance().UnloadContent();
 
 	al_destroy_display(display);
 	al_destroy_timer(timer);

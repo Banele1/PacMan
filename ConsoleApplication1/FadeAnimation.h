@@ -12,6 +12,8 @@ public:
 	void UnloadContent();
 	void Update(InputManager input);
 
+	void SetAlpha(int value);
+
 private:
 	float fadespeed;
 	bool increase;

@@ -48,6 +48,16 @@ void FadeAnimation::Update(InputManager input)
 	}
 	else
 		alpha = 255;
+}
+
+void FadeAnimation::SetAlpha(int value)
+{
+	alpha = value;
+
+	if (alpha == 0)
+		increase = true;
+	else if (alpha == 255)
+		increase = false;
 
 
 }

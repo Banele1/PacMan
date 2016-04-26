@@ -17,6 +17,10 @@ public:
 	virtual void Update(InputManager input); 
     void Draw(ALLEGRO_DISPLAY *display); 
 
+	virtual void SetAlpha(float value );
+	float GetAlpha();
+
+
 protected:
 	ALLEGRO_BITMAP *image, *sourceRect;
 	string text;

@@ -53,3 +53,14 @@ void Animation::Draw(ALLEGRO_DISPLAY *display)
 
 }
 
+void Animation::SetAlpha(float alpha)
+{
+	this->alpha = alpha;
+
+}
+
+float Animation::GetAlpha()
+{
+	return alpha;
+
+}
